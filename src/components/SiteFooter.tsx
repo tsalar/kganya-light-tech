@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Linkedin, Facebook, Instagram, Github, Twitter, Mail, Phone, MapPin, Sparkles } from "lucide-react";
+import { Linkedin, Facebook, Instagram, Twitter, Mail, Phone, MapPin, Sparkles } from "lucide-react";
 
 export function SiteFooter() {
   return (
@@ -18,8 +18,13 @@ export function SiteFooter() {
             ideas into measurable impact through data, AI and software.
           </p>
           <div className="mt-6 flex gap-3">
-            {[Linkedin, Facebook, Instagram, Twitter, Github].map((Icon, i) => (
-              <a key={i} href="#" aria-label="Social" className="grid h-9 w-9 place-items-center rounded-full bg-white/5 transition hover:bg-gold hover:text-navy-deep">
+            {[
+              { Icon: Facebook, href: "https://www.facebook.com/profile.php?id=61590824961510", label: "Facebook" },
+              { Icon: Linkedin, href: "https://www.linkedin.com/in/kganyalabs-kl-05b227414", label: "LinkedIn" },
+              { Icon: Twitter, href: "https://x.com/home", label: "X" },
+              { Icon: Instagram, href: "https://www.instagram.com/kganyalabs/", label: "Instagram" },
+            ].map(({ Icon, href, label }) => (
+              <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={label} className="grid h-9 w-9 place-items-center rounded-full bg-white/5 transition hover:bg-gold hover:text-navy-deep">
                 <Icon className="h-4 w-4" />
               </a>
             ))}
@@ -38,8 +43,8 @@ export function SiteFooter() {
         <div>
           <h4 className="text-sm font-semibold uppercase tracking-wider text-gold">Contact</h4>
           <ul className="mt-4 space-y-3 text-sm text-white/70">
-            <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-gold" /> info@kganyalabs.co.bw</li>
-            <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-gold" /> +267 XXX XXX XX</li>
+            <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-gold" /> flowguardltd@gmail.com</li>
+            <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-gold" /> +267 72 340 388</li>
             <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-gold" /> Gaborone, Botswana</li>
           </ul>
         </div>

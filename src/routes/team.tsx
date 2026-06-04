@@ -36,7 +36,7 @@ const team = [
     role: "Co-Founder & Technology Lead",
     initials: "NG",
     linkedin: "https://www.linkedin.com/in/nyasha-gutu-9a333a326/",
-    email: "nyasha@email.com", 
+    email: "NyashaGutu@gmail.com",
     expertise: [
       "Software Engineering",
       "Web Development",
@@ -49,7 +49,7 @@ const team = [
     role: "Co-Founder & Innovation Lead",
     initials: "MJ",
     linkedin: "https://www.linkedin.com/in/mpho-carol-jan-412180210/",
-    email: "mpho@email.com",
+    email: "sasaleahjan@gmail.com",
     expertise: [
       "Innovation Management",
       "Product Development",
