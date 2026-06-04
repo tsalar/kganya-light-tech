@@ -91,7 +91,7 @@ function Contact() {
                   <Field label="Email *" name="email" type="email" error={errors.email} />
                   <Field label="Phone" name="phone" error={errors.phone} />
                   <SelectField label="Service Needed" name="service" options={["Data Analytics & BI", "Web Development", "Custom Software", "AI Solutions", "Digital Transformation", "Research & Innovation"]} />
-                  <SelectField label="Project Budget" name="budget" options={["< BWP 25k", "BWP 25k – 100k", "BWP 100k – 500k", "BWP 500k+"]} />
+                  <SelectField label="Project Budget" name="budget" options={["BWP 4,500 – 10,000 (Starter)", "BWP 10,000 – 25,000 (Essential)", "BWP 25,000 – 60,000 (Growth)", "BWP 60,000 – 150,000 (Professional)", "BWP 150,000 – 400,000 (Enterprise)", "BWP 400,000+ (Custom)"]} />
                 </div>
                 <div className="grid gap-1.5">
                   <label className="text-sm font-semibold">Message *</label>
