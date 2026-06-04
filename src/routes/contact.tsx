@@ -43,12 +43,25 @@ function Contact() {
       return;
     }
     setErrors({});
+    const subject = `New enquiry from ${data.name}`;
+    const body = [
+      `Name: ${data.name}`,
+      `Organization: ${data.organization || "-"}`,
+      `Email: ${data.email}`,
+      `Phone: ${data.phone || "-"}`,
+      `Service: ${data.service || "-"}`,
+      `Budget: ${data.budget || "-"}`,
+      "",
+      "Message:",
+      data.message,
+    ].join("\n");
+    window.location.href = `mailto:flowguardltd@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     setSubmitted(true);
   };
 
   const info = [
-    { icon: Mail, label: "Email", value: "info@kganyalabs.co.bw" },
-    { icon: Phone, label: "Phone", value: "+267 XXX XXX XX" },
+    { icon: Mail, label: "Email", value: "flowguardltd@gmail.com" },
+    { icon: Phone, label: "Phone", value: "+267 72 340 388" },
     { icon: MapPin, label: "Location", value: "Gaborone, Botswana" },
     { icon: Clock, label: "Hours", value: "Mon–Fri · 08:00–17:00" },
   ];
