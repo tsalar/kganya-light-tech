@@ -43,8 +43,8 @@ export function SiteFooter() {
         <div>
           <h4 className="text-sm font-semibold uppercase tracking-wider text-gold">Contact</h4>
           <ul className="mt-4 space-y-3 text-sm text-white/70">
-            <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-gold" /> info@kganyalabs.co.bw</li>
-            <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-gold" /> +267 XXX XXX XX</li>
+            <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-gold" /> flowguardltd@gmail.com</li>
+            <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-gold" /> +267 72 340 388</li>
             <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-gold" /> Gaborone, Botswana</li>
           </ul>
         </div>
