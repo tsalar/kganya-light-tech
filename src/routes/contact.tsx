@@ -43,20 +43,19 @@ function Contact() {
       return;
     }
     setErrors({});
+    const subject = `New enquiry from ${data.name}`;
     const body = [
-      `*New enquiry from ${data.name}*`,
-      ``,
       `Name: ${data.name}`,
       `Organization: ${data.organization || "-"}`,
       `Email: ${data.email}`,
       `Phone: ${data.phone || "-"}`,
       `Service: ${data.service || "-"}`,
       `Budget: ${data.budget || "-"}`,
-      ``,
-      `Message:`,
+      "",
+      "Message:",
       data.message,
-    ].join("%0A");
-    window.location.href = `https://wa.me/26772340388?text=${body}`;
+    ].join("\n");
+    window.location.href = `mailto:flowguardltd@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     setSubmitted(true);
   };
 
